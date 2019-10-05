@@ -1,0 +1,11 @@
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.exe
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.deps.json
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.runtimeconfig.json
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.runtimeconfig.dev.json
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.dll
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\bin\Debug\netcoreapp3.0\Ćwiczenia Dom.pdb
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\obj\Debug\netcoreapp3.0\Ćwiczenia Dom.csprojAssemblyReference.cache
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\obj\Debug\netcoreapp3.0\Ćwiczenia Dom.AssemblyInfoInputs.cache
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\obj\Debug\netcoreapp3.0\Ćwiczenia Dom.AssemblyInfo.cs
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\obj\Debug\netcoreapp3.0\Ćwiczenia Dom.dll
+C:\Users\Laptop\Desktop\Githuub\Pierwsze programy\Ćwiczenia Dom\Ćwiczenia Dom\obj\Debug\netcoreapp3.0\Ćwiczenia Dom.pdb
