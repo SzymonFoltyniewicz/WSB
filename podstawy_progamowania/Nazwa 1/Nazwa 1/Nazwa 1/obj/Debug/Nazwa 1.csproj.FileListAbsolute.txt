@@ -1,7 +1,0 @@
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\bin\Debug\Nazwa 1.exe.config
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\bin\Debug\Nazwa 1.exe
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\bin\Debug\Nazwa 1.pdb
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\obj\Debug\Nazwa 1.csprojAssemblyReference.cache
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\obj\Debug\Nazwa 1.csproj.CoreCompileInputs.cache
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\obj\Debug\Nazwa 1.exe
-C:\GIT\podstawy_progamowania\Nazwa 1\Nazwa 1\Nazwa 1\obj\Debug\Nazwa 1.pdb
