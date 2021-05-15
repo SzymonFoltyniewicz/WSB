@@ -1,9 +1,0 @@
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\bin\Debug\deszyfrator.exe.config
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\bin\Debug\deszyfrator.exe
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\bin\Debug\deszyfrator.pdb
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.csprojAssemblyReference.cache
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.Form1.resources
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.Properties.Resources.resources
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.csproj.GenerateResource.cache
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.exe
-C:\Users\Laptop\Downloads\deszyfrator\deszyfrator\obj\Debug\deszyfrator.pdb
