@@ -1,0 +1,19 @@
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.exe.config
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.exe
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.pdb
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.csprojAssemblyReference.cache
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko_i_krzyżyk.Form1.resources
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko_i_krzyżyk.Properties.Resources.resources
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.csproj.GenerateResource.cache
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.exe
+C:\Users\Laptop\Downloads\Projekty C#\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.pdb
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.exe.config
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.exe
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\bin\Debug\Kółko i krzyżyk.pdb
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.csprojAssemblyReference.cache
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko_i_krzyżyk.Form1.resources
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko_i_krzyżyk.Properties.Resources.resources
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.csproj.GenerateResource.cache
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.exe
+C:\Users\Laptop\Desktop\Githuub\Projekty C# WinForms\Kółko i krzyżyk\Kółko i krzyżyk\obj\Debug\Kółko i krzyżyk.pdb
