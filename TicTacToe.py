@@ -193,7 +193,10 @@ try:
     size = int(size)
 except:
     print("Wprowadzona wartość nie jest liczbą")
-if playMode == 1 or playMode == 2: play(playMode, size)
+if size >= 2:
+    if playMode == 1 or playMode == 2: play(playMode, size)
+else: print("Minimapna wielkość planszy to 2 na 2")
+
 
 
 
