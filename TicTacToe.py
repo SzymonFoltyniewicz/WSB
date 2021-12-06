@@ -1,138 +1,180 @@
-board = ["  " for i in range(9)]
+import random
+def print_board(board, size):
+    rows = ["" for i in range(size)]
+    for i in range(size):
+        rows[i] = ["| {" + board[i][j] + "} " for j in range(size)]
+        rows[i] += "|"
 
-def clear_board():
-    for i in range(9):
-        board[i] = "  "
+    for i in range(size):
+        tempRow = ""
+        for j in range(size + 1):
+            tempRow += rows[i][j]
+            if j == size:
+                print(tempRow)
+# done
+def is_victory(sign, board, size):
+    for i in range(size):
+        signAmount = 0
+        for j in range(size):
+            if board[i][j] == sign: signAmount += 1
+            if signAmount == size: return True
+    for i in range(size):
+        signAmount = 0
+        for j in range(size):
+            if board[j][i] == sign: signAmount += 1
+            if signAmount == size: return True
+    signAmount = 0
+    for i in range(size):
+        if board[i][i] == sign: signAmount += 1
+        if signAmount == size: return True
+    signAmount = 0
+    for i in range(size):
+        if board[i][size - i - 1] == sign: signAmount += 1
+        if signAmount == size: return True
 
-def print_board():
-    row1 = "| {} | {} | {} |".format(board[0], board[1], board[2])
-    row2 = "| {} | {} | {} |".format(board[3], board[4], board[5])
-    row3 = "| {} | {} | {} |".format(board[6], board[7], board[8])
-
-    print()
-    print(row1)
-    print(row2)
-    print(row3)
-    print()
-
-def is_victory(sign):
-    if (board[0] == sign and board[1] == sign and board[2] == sign) or \
-       (board[3] == sign and board[4] == sign and board[5] == sign) or \
-       (board[6] == sign and board[7] == sign and board[8] == sign) or \
-       (board[0] == sign and board[3] == sign and board[6] == sign) or \
-       (board[1] == sign and board[4] == sign and board[7] == sign) or \
-       (board[2] == sign and board[5] == sign and board[8] == sign) or \
-       (board[0] == sign and board[4] == sign and board[8] == sign) or \
-       (board[2] == sign and board[4] == sign and board[6] == sign):
-        return True
-    else:
-        return False
+# done
     
-def is_draw():
-    if "  " not in board:
+def is_draw(board):
+    fullRows = 0
+    for i in range(len(board)):
+        if "  " not in board[i]:
+            fullRows += 1
+    if fullRows == len(board):
         return True
-    else:
-        return False
+    else: return False
+# done
 
-
-def player_move(sign):
+def player_move(sign, board, size):
 
     if sign == "X":
         number = 1
     elif sign == "O":
         number = 2
-
     print("Twój ruch graczu numer {}".format(number))
     while True: 
         try:
 
-                choice = int(input("Wybierz pole na które chcesz wprowadzić twój znaczek (1-9): ").strip())
-                if board[choice -1] == "  " and (choice < 10 and choice > 0):
-                     board[choice -1] = sign
+                choiceX = int(input("Podaj współrzędną x znaczka(0-"+str(size-1)+"): "))
+                choiceY = int(input("Podaj współrzędną y znaczka(0-"+str(size-1)+"): "))
+                if board[choiceX][choiceY] == "  " and (choiceX < size and choiceX >= 0) and (choiceY < size and choiceY >= 0):
+                     board[choiceX][choiceY] = sign
                      break
                 else:
                     print()
                     print("To miejsce jest zajęte!")
         except:
             print("Podana wartość nie jest odpowiednią liczbą")
+# done
 
-def bot_logic(sign):
-    if board[0] == sign and board[2] == sign and board[1] == "  ": choice = 1
-    elif board[0] == sign and board[1] == sign and board[2] == "  ": choice = 2
-    elif board[1] == sign and board[2] == sign and board[0] == "  ": choice = 0
-    # ===
-    elif board[3] == sign and board[4] == sign and board[5] == "  ": choice = 5
-    elif board[5] == sign and board[4] == sign and board[3] == "  ": choice = 3
-    elif board[5] == sign and board[3] == sign and board[4] == "  ": choice = 4
-    # ===
-    elif board[6] == sign and board[7] == sign and board[8] == "  ": choice = 8
-    elif board[7] == sign and board[8] == sign and board[6] == "  ": choice = 6
-    elif board[6] == sign and board[8] == sign and board[7] == "  ": choice = 7
-    # ===
-    elif board[0] == sign and board[3] == sign and board[6] == "  ": choice = 6
-    elif board[0] == sign and board[6] == sign and board[3] == "  ": choice = 3
-    elif board[3] == sign and board[6] == sign and board[0] == "  ": choice = 0
-    # |||
-    elif board[1] == sign and board[4] == sign and board[7] == "  ": choice = 7
-    elif board[1] == sign and board[7] == sign and board[4] == "  ": choice = 4
-    elif board[7] == sign and board[4] == sign and board[1] == "  ": choice = 1
-    # |||
-    elif board[2] == sign and board[5] == sign and board[8] == "  ": choice = 8
-    elif board[5] == sign and board[8] == sign and board[2] == "  ": choice = 2
-    elif board[2] == sign and board[8] == sign and board[5] == "  ": choice = 5
-    # |||
-    elif board[0] == sign and board[4] == sign and board[8] == "  ": choice = 8
-    elif board[4] == sign and board[8] == sign and board[0] == "  ": choice = 0
-    elif board[8] == sign and board[0] == sign and board[4] == "  ": choice = 4
-    # \\\
-    elif board[2] == sign and board[4] == sign and board[6] == "  ": choice = 6
-    elif board[6] == sign and board[4] == sign and board[2] == "  ": choice = 2
-    elif board[2] == sign and board[6] == sign and board[4] == "  ": choice = 4
-    # ///
-    else:
-        choice = 9
-    return choice
-
-
-
-def bot_move(sign):
-    print("Ruch bota")
-    choice = bot_logic("O")
-    if choice == 9: choice = bot_logic("X")
-    if choice == 9 and board[4] == "  ":
-        choice = 4
-    if choice == 9:
-        for i in range(len(board)):
-            if board[i] == "  ":
-                choice = i
-                break
-    board[choice] = sign
-
-
-def play(gameMode):
+def random_move(board, size):
     while True:
-        clear_board()
+        x = random.randint(0,size-1)
+        y = random.randint(0,size-1)
+        if board[x][y] == "  ":
+            board[x][y] = "O"
+            return False
+# done
+def step1(sign, board, size):
+    solution = [0,0]
+    for i in range(size):
+        points = 0
+        for j in range(size):
+            if board[i][j] == sign:
+                points += 1
+            elif board[i][j] == "  ":
+                solution[0] = i
+                solution[1] = j
+            if points == size - 1 and board[solution[0]][solution[1]] == "  " and j == size-1:
+                board[solution[0]][solution[1]] = "O"
+                return False
+    return True
+# done
+def step2(sign, board, size):
+    solution = [0,0]
+    for i in range(size):
+        points = 0
+        for j in range(size):
+            if board[j][i] == sign:
+                points += 1
+            elif board[j][i] == "  ":
+                solution[0] = j
+                solution[1] = i
+            if points == size - 1 and board[solution[0]][solution[1]] == "  " and j == size-1:
+                board[solution[0]][solution[1]] = "O"
+                return False
+    return True
+#done
+def step3(sign, board, size):
+    solution = [0,0]
+    points = 0
+    for i in range(size):
+            if board[i][i] == sign:
+                points += 1
+            elif board[i][i] == "  ":
+                solution[0] = i
+                solution[1] = i
+    if points == size - 1 and board[solution[0]][solution[1]] == "  ":
+        board[solution[0]][solution[1]] = "O"
+        return False
+    return True
+#done
+def step4(sign, board, size):
+    solution = [0,0]
+    points = 0
+    for i in range(size):
+            if board[i][size - i - 1] == sign:
+                points += 1
+            elif board[i][size - i - 1] == "  ":
+                solution[0] = i
+                solution[1] = size - i - 1
+    if points == size - 1 and board[solution[0]][solution[1]] == "  ":
+        board[solution[0]][solution[1]] = "O"
+        return False
+    return True
+
+def bot_logic(sign, board,size):
+    nextStep = step1(sign, board, size)
+    if nextStep: nextStep = step2(sign, board, size)
+    if nextStep: nextStep = step3(sign, board, size)
+    if nextStep: nextStep = step4(sign, board, size)
+    if sign == "X" and nextStep:
+        nextStep = random_move(board, size)
+    return nextStep
+
+
+def bot_move(board,size):
+    print("Ruch bota")
+    if bot_logic("O",board,size):
+        bot_logic("X",board,size)
+
+
+
+def play(gameMode, size):
+    while True:
+        board = ["  " for i in range(size)]
+        for i in range(size):
+            board[i] = ["  " for i in range(size)]
         while True:
 
-            print_board()
-            player_move("X")
-            print_board()
+            print_board(board, size)
+            player_move("X",board,size)
+            print_board(board, size)
 
-            if is_victory("X"):
+            if is_victory("X",board,size):
                 print("Zwyciężył X!")
                 break
-            elif is_draw():
+            elif is_draw(board):
                 print("Remis!")
                 break
 
-            if gameMode == 2: player_move("O")
-            else: bot_move("O")
+            if gameMode == 2: player_move("O",board,size)
+            else: bot_move(board,size)
 
-            if is_victory("O"):
-                print_board()
+            if is_victory("O",board,size):
+                print_board(board, size)
                 print("Zwyciężył O!")
                 break
-            elif is_draw():
+            elif is_draw(board):
                 print("Remis!")
                 break
         nextGame = input("Jeśli chcesz grać dalej, wpisz 'T': ")
@@ -140,18 +182,18 @@ def play(gameMode):
             continue
         else: break
 
-
+# done
 print("Wybierz jedną z opcji")
 print("1 - gra z botem")
 print("2 - gra z drugim graczem")
 playMode = input(": ")
+size = input("Podaj rozmiar planszy (x na x):")
 try:
     playMode = int(playMode)
+    size = int(size)
 except:
     print("Wprowadzona wartość nie jest liczbą")
-if playMode == 1 or playMode == 2: play(playMode)
-
-input("...")
+if playMode == 1 or playMode == 2: play(playMode, size)
 
 
 
